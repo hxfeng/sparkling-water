@@ -34,7 +34,7 @@ pipeline{
                 name: 'sparklingTestEnv')
 
         choice(
-                choices: 'internal\nexternal',
+                choices: 'external\ninternal',
                 description: 'Sparkling Water backend mode.',
                 name: 'backendMode')
 
