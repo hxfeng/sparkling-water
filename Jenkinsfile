@@ -125,7 +125,7 @@ pipeline{
             steps {
                 sh  """
                     # Build, run regular tests
-                    ${env.WORKSPACE}/gradlew test -x integTest -PbackendMode=${params.backendMode} -PstartH2OClusterOnYarn=${params.startH2OClusterOnYarn}
+                    ${env.WORKSPACE}/gradlew test -x integTest -PbackendMode=${params.backendMode}
                     """
             }
 
